@@ -1,0 +1,60 @@
+/* ========================================================
+   ESTILOS BASE (Rama Main)
+   TODO: En futuras ramas, cambiar estos grises por colores!
+   ======================================================== */
+
+body {
+    font-family: monospace;
+    background-color: #ffffff; /* ¡Cambiar a negro o fondo espacial luego! */
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-principal {
+    text-align: center;
+}
+
+#escenario {
+    width: 400px;
+    height: 400px;
+    background-color: #eeeeee;
+    border: 3px solid #333333;
+    position: relative;
+    overflow: hidden; /* Para que los enemigos y balas no salgan de la caja */
+    margin: 0 auto;
+}
+
+/* El jugador es solo un rectángulo gris oscuro por ahora */
+#jugador {
+    width: 40px;
+    height: 20px;
+    background-color: #333333;
+    position: absolute;
+    bottom: 10px;
+    left: 180px; /* (400 / 2) - (40 / 2) */
+}
+
+/* Clases generadas desde JavaScript */
+.enemigo {
+    width: 30px;
+    height: 30px;
+    background-color: #888888; /* ¡En la rama de estilos, hazlos verdes o rojos! */
+    position: absolute;
+}
+
+.bala {
+    width: 4px;
+    height: 15px;
+    background-color: #000000;
+    position: absolute;
+}
+
+.instrucciones {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
