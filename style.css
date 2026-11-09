@@ -1,12 +1,11 @@
 /* ========================================================
-   ESTILOS BASE (Rama Main)
-   TODO: En futuras ramas, cambiar estos grises por colores!
+   ESTILOS NEÓN (Rama feature/estilos-neon)
    ======================================================== */
 
 body {
     font-family: monospace;
-    background-color: #ffffff; /* ¡Cambiar a negro o fondo espacial luego! */
-    color: #333333;
+    background-color: #0b0c10; /* Fondo oscuro */
+    color: #66fcf1; /* Texto cian brillante */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,40 +20,46 @@ body {
 #escenario {
     width: 400px;
     height: 400px;
-    background-color: #eeeeee;
-    border: 3px solid #333333;
+    background-color: #1f2833;
+    border: 3px solid #45a29e;
+    box-shadow: 0 0 15px #45a29e; /* Brillo de neón */
     position: relative;
-    overflow: hidden; /* Para que los enemigos y balas no salgan de la caja */
+    overflow: hidden;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
-/* El jugador es solo un rectángulo gris oscuro por ahora */
 #jugador {
     width: 40px;
     height: 20px;
-    background-color: #333333;
+    background-color: #66fcf1;
+    box-shadow: 0 0 10px #66fcf1;
     position: absolute;
     bottom: 10px;
-    left: 180px; /* (400 / 2) - (40 / 2) */
+    left: 180px;
+    border-radius: 5px 5px 0 0; /* Forma de navecilla */
 }
 
-/* Clases generadas desde JavaScript */
 .enemigo {
     width: 30px;
     height: 30px;
-    background-color: #888888; /* ¡En la rama de estilos, hazlos verdes o rojos! */
+    background-color: #ff0055;
+    box-shadow: 0 0 10px #ff0055;
     position: absolute;
+    border-radius: 50%; /* Enemigos redondos como ovnis */
 }
 
 .bala {
     width: 4px;
     height: 15px;
-    background-color: #000000;
+    background-color: #f2e900;
+    box-shadow: 0 0 8px #f2e900;
     position: absolute;
+    border-radius: 2px;
 }
 
 .instrucciones {
     margin-top: 15px;
     font-size: 14px;
-    color: #666;
+    color: #c5c6c7;
 }
